@@ -1,0 +1,104 @@
+.info_wrapper {
+  padding-left: 2rem;
+  background-color: aliceblue;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+.info_title {
+  background-color: rgb(119, 186, 245);
+  padding: 10px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.info_container {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+.info_label {
+  width: 15rem;
+}
+.info_input {
+  display: block;
+  font-family: inherit;
+  font-size: 1rem;
+  color: inherit;
+  padding: 0.2rem 0.9rem;
+  width: 20rem;
+  border: none;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-weight: 600;
+}
+.info_btn {
+  background-color: rgb(119, 186, 245);
+  padding: 10px;
+  box-shadow: 0 10px 10px 0px rgb(158, 203, 243);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 6px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.25s linear;
+  margin-bottom: 2rem;
+}
+.info_btn:hover {
+  transform: translateX(0.5rem);
+}
+.info_input:focus {
+  outline: none;
+  border-bottom: 3px solid rgb(119, 186, 245);
+}
+.info_input:focus:invalid {
+  border-bottom: 3px solid #ff7730;
+}
+
+.info_upload {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.info_upload:focus + label {
+  outline: 3px solid rgb(119, 186, 245);
+  outline-offset: 3px;
+}
+
+.info_upload + label {
+  color: rgb(119, 186, 245);
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid rgb(119, 186, 245);
+  padding: 3px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.info_upload + label:hover {
+  background-color: rgb(119, 186, 245);
+  color: #fff;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
+}
+.info_img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5rem;
+  margin-right: 2rem;
+}
