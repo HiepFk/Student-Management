@@ -128,7 +128,6 @@ export const GetAllUsers = async (dispatch, type) => {
     const res = await axios.get(url);
     dispatch(GetUsersSuccess(res.data));
   } catch (error) {
-    console.log(error);
     dispatch(GetUsersError());
   }
 };
@@ -327,7 +326,6 @@ export const UpdateClass = async (dispatch, id, data) => {
       url: `${link}/v1/class/${id}`,
       data,
     });
-    console.log(res.data);
     dispatch(ShowAlert(res.data));
     dispatch(GetClassSuccess(res.data));
     const timeoutID = window.setTimeout(() => {

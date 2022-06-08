@@ -82,7 +82,6 @@ subjectSchema.pre("save", function (next) {
 });
 subjectSchema.pre(/^findOneAnd/, async function (next) {
   this.r = await this.clone().findOne();
-  console.log(this.r);
   next();
 });
 subjectSchema.post(/^findOneAnd/, function () {

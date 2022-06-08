@@ -75,7 +75,6 @@ const Teachers = () => {
     ) {
       delete user.photo;
     }
-    console.log(user);
     AddNewUser(dispatch, user, navigate, authRole);
   };
 

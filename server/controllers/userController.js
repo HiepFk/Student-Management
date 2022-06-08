@@ -82,7 +82,6 @@ const userController = {
         data: { newUser },
       });
     } catch (error) {
-      console.log(error);
       res.status(404).json({
         status: "error",
         message: "Thêm người dùng thất bại",
@@ -125,7 +124,6 @@ const userController = {
         data: { user },
       });
     } catch (error) {
-      console.log(error);
       res.status(404).json({
         status: "error",
         message: `Cập nhật không thành công`,
@@ -194,7 +192,6 @@ const userController = {
         data: { user },
       });
     } catch (error) {
-      console.log(error);
       res.status(404).json({
         status: "error",
         message: "Cập nhật thất bại",
